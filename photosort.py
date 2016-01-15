@@ -12,7 +12,7 @@ def senderror(errormsg, status=1):
     sys.stderr.write(colored('ERORR: %s\n' % (errormsg), 'red', attrs=['bold']))
     sys.exit(status)
 
-parser = argparse.ArgumentParser(prog='sort.py', usage='%(prog)s -o DIR [FILES...]', description='Sort images based on date value in EXIF data.')
+parser = argparse.ArgumentParser(prog='photosort.py', usage='%(prog)s -o DIR [FILES...]', description='Sort images based on date value in EXIF data.')
 parser.add_argument("files", nargs='+', help="list of files to be processed")
 parser.add_argument("-o", "--out", required=True, help="output directory")
 parser.add_argument("-n", "--noact", required=False, action="store_true", help="no action, just simulate")
