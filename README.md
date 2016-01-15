@@ -4,3 +4,5 @@ This will sort your photos based on dates in exif data (Converted to Jalali cale
 - exifread
 - jdatetime
 - termcolor
+# Need Help
+Try running photosort with -h or --help option (:
